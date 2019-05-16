@@ -10,9 +10,9 @@
       <a class="header-logo">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
-      <span class="search">Поиск</span>
-      <span class="tab">Закладки:</span>
-      <span class="basket">Корзина:</span>
+      <a class="search" href="#">Поиск</a>
+      <a class="tab" href=#>Закладки:</a>
+      <a class="basket" href="#">Корзина:</a>
       <a href="#">Оформить заказ</a>
     </div>
     <div class="container">
@@ -204,7 +204,9 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <a href="#"><img src="img/map-small.png" width="300" height="158" alt="Mагазин &laquo;Техномарт&raquo; по адресу Большая Конюшенная ул., д.19"></a>
+        <a href="#">
+          <img src="img/map-small.png" width="300" height="158" alt="Mагазин &laquo;Техномарт&raquo; по адресу Большая Конюшенная ул., д.19">
+        </a>
         <a class="button-write" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -241,9 +243,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <p class="contact">
@@ -258,12 +260,35 @@
   </footer>
   <section class="modal modal-write">
     <h2 class="visually-hidden">Напишите нам!</h2>
-    <!--Здесь будет форма-->
-    <span class="modal-close">x</span>
+    <form class="write" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label>
+          Ваше имя:
+          <input type="text" name="name" value="name" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p>
+        <label>
+          Ваш e-mail:
+          <input type="email" name="email" value="email" placeholder="email@example.com">
+        </label>
+      </p>
+      <p>
+        <label>
+          Текст письма:
+          <textarea name="letter">В свободной форме</textarea>
+        </label>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button type="button" class="modal-close">x</button>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+    <a href="#">
+      <img src="img/map-large.png" width="940" height="446" alt="Mагазин &laquo;Техномарт&raquo; по адресу Большая Конюшенная ул., д.19">
+    </a>
+    <button type="button" class="modal-close">x</button>
   </section>
 </body>
 </html>

@@ -3,10 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <style>
-  body{
-  background-color: grey;}
-  </style>
 </head>
 <body>
   <header>
@@ -14,9 +10,9 @@
       <a href="index.html">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
-      <span class="search">Поиск</span>
-      <span class="tab">Закладки:0</span>
-      <span class="basket">Корзина:10</span>
+      <a class="search" href="#">Поиск</a>
+      <a class="tab" href="#">Закладки:0</a>
+      <a class="basket" href="#">Корзина:10</a>
       <a href="#">Оформить заказ</a>
     </div>
     <div class="container">
@@ -53,14 +49,71 @@
     <ul class="breadcrumbs">
       <li><a href="index.html" class="icon-home"><span class="visually-hidden">На главную</span></a></li>
       <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="catalog.html"></a></li>
+      <li><a href="catalog.html">Инструмент</a></li>
       <li class="breadcrumbs-current">Перфораторы</li>
     </ul>
     <h1>Перфораторы</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
-    </section>
+      <!-- Здесь будет фильтр -->
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>
+                Bosch
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
+                Интерскол
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
+                Makita
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">
+                Dewalt
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">
+                Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="battery" checked>
+                Аккумуляторные
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="network">
+                Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">
+            Показать
+          </button>
+        </form>
+      </section>
     <section class="sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
           <!-- Здесь будет форма -->
@@ -222,9 +275,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <p class="contact">
@@ -245,7 +298,7 @@
       <a class="button" href="#">Оформить заказ</a>
       <button type="button">Продолжить покупки</button>
     </div>
-    <span class="modal-close">x</span>
+    <button class="modal-close">x</button>
   </div>
 </body>
 </html>

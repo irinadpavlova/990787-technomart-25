@@ -10,7 +10,11 @@
       <a class="header-logo">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
-      <a class="search" href="#">Поиск</a>
+      <form class="search" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          Поиск:
+        </label>
+      </form>
       <a class="tab" href=#>Закладки:</a>
       <a class="basket" href="#">Корзина:</a>
       <a href="#">Оформить заказ</a>
@@ -293,6 +297,14 @@
       </p>
     </div>
   </footer>
+  <section class="modal modal-search">
+    <form class="search" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden">
+        Поиск:
+        <input type="search" name="search" placeholder="Перфоратор">
+      </label>
+    </form>
+  </section>
   <section class="modal modal-write">
     <h2 class="visually-hidden">Напишите нам!</h2>
     <form class="write" action="https://echo.htmlacademy.ru" method="post">

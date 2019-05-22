@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
-      <a href="index.html">
+    <div class="container top-header">
+      <a class="logo" href="index.html">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
       <form class="search" action="https://echo.htmlacademy.ru" method="post">
@@ -18,9 +22,9 @@
       </form>
       <a class="tab" href="#">Закладки:0</a>
       <a class="basket" href="#">Корзина:10</a>
-      <a href="#">Оформить заказ</a>
+      <a class="order" href="#">Оформить заказ</a>
     </div>
-    <div class="container">
+    <div class="container middle-header">
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <p class="contacts">
         <a href="tel:+78125550555">
@@ -30,7 +34,7 @@
       </p>
       <ul class="user-navigation">
         <li><a href="#">Равшан Джамшутович</a></li>
-        <li><a href="#"><span class="visually-hidden">Выйти</span></a></li>
+        <li><a href="#"><span class="exit visually-hidden">Выйти</span></a></li>
       </ul>
       <ul class="authorization">
         <li><a href="#">Мои заказы</a></li>
@@ -56,21 +60,21 @@
       <li><a href="catalog.html">Инструмент</a></li>
       <li class="breadcrumbs-current">Перфораторы</li>
     </ul>
-    <h1>Перфораторы</h1>
+    <h1 class="perforator">Перфораторы</h1>
     <section class="filter">
-      <h2 class="visually-hidden">Фильтр:</h2>
+      <h2>Фильтр:</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Цена:</legend>
           <!-- ползунок -->
-          <label class="visually-hidden">
+          <label for="min-price" class="visually-hidden">
             Минимальная цена
-            <input class="price" type="number" value="0">
           </label>
-          <label class="visually-hidden">
+          <input class="price" type="number" value="0" id="min-price">
+          <label for="max-price" class="visually-hidden">
             Максимальная цена
-            <input class="price" type="number" value="30000">
           </label>
+          <input class="price" type="number" value="30000" id="max-price">
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
@@ -124,7 +128,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="filter-button button" type="submit">
+        <button class="filter button button-catalog" type="submit">
           Показать
         </button>
       </form>
@@ -281,7 +285,7 @@
   </main>
   <footer>
     <div class="footer-top">
-      <a href="index.html">
+      <a class="logo">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
       <p class="footer-contacts">
@@ -290,14 +294,14 @@
           +7 (812) 555-05-55
         </a>
       </p>
-      <ul class="footer-main-navigation">
+      <ul class="footer main-navigation">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <ul class="footer-goods-navigation">
+      <ul class="footer goods-navigation">
         <li><a href="#">Материалы</a></li>
         <li><a href="#">Техника</a></li>
         <li><a href="#">Инструмент</a></li>
@@ -309,18 +313,16 @@
         &copy; 2010–2019 Компания &laquo;Техномарт&raquo;<br>
         Все права защищены
       </p>
-      <div class="footer-social">
-        <ul>
+        <ul class="footer-social">
           <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
-      </div>
       <p class="contact">
         Обратная связь:
         <a href="#">mail@htmlacademy.ru</a>
       </p>
-      <p class="footer-copyright-html">
+      <p class="copyright-html">
         Разработано-
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>

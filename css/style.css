@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 1200px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
@@ -13,13 +14,27 @@ a {
   text-decoration: none;
 }
 
-a.logo {
+.top-header {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+.top-header .logo {
+  display: block;
+
+  width: 220px;
+  height: 47px;
+
+  text-align: center;
+  vertical-align: middle;
+
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
-a.logo:hover,
-a.logo:focus {
+.top-header .logo:hover,
+.top-header .logo:focus {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ca2c37;
 }
@@ -29,17 +44,47 @@ a.logo:active {
  background-color: #ba2732;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .top-header a,
 .top-header label {
   line-height: 1.06;
   color: #ffffff;
 }
 
+.top-header .search {
+  width: 270px;
+}
+
+.search input {
+  visibility: hidden;
+}
+
+.top-header .tab,
+.top-header .basket,
+.top-header .order {
+  width:150px;
+}
+header.main {
+  height: 320px;
+  margin-bottom: 59px;
+}
+
 .middle-header {
+  display: flex;
+  justify-content: center;
+  height: 158px;
   background-color: #f4f7f9;
 }
 
 .middle-header h1 {
+  width: 196px;
+  height: 60px;
+  margin-left: 53px;
+  margin-bottom: 71px;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -48,21 +93,37 @@ a.logo:active {
 }
 
 .contacts a {
+  width: 144px;
+  height: 21px;
+  padding-top: 13px;
+  padding-right: 52px;
+  padding-bottom: 11px;
+  padding-left: 74px;
+
   font-size: 21px;
   font-weight: normal;
   line-height: 1;
   color: #ee3643;
+
+  border: 3px solid #ffffff;
 }
 
 .middle-header .contacts {
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
   color: #32425c;
+  margin-right: 69px;
 }
 
 .user-navigation,
 .main-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -72,6 +133,32 @@ a.logo:active {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+ .user-iron a {
+  width: 46px;
+  height: 16px;
+  padding-top: 14px;
+  padding-right: 27px;
+  padding-bottom: 11px;
+  padding-left: 48px;
+  margin-right: 10px;
+}
+
+.user a {
+  width: 100px;
+  height: 20px;
+  padding-top: 14px;
+  padding-right: 25px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+}
+
+.main-navigation {
+  justify-content: space-around;
+  height: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .main-navigation a {

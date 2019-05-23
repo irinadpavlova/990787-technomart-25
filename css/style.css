@@ -574,3 +574,68 @@ section.perforator h2 {
   line-height: 1;
   font-weight: normal;
 }
+
+.modal {
+  background-color: #ffffff;
+}
+
+.modal-write,
+.modal-order {
+  border-top: 7px solid #ee3643;
+}
+
+.modal-write label {
+  font-size: 18px;
+  line-height: 1;
+  color: #000000;
+}
+
+.modal-write input,
+.modal-write textarea {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #999999;
+
+  border: 2px solid #a9a9a9;
+}
+
+.modal-write input:hover,
+.modal-write textarea:hover {
+  border: solid 2px #999999;
+}
+
+.modal-write input:focus,
+.modal-write textarea:focus {
+  border: solid 2px #ee3643;
+}
+
+.modal-map img {
+   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+   background-color: #565656;
+}
+
+.modal-order p {
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+}
+
+.modal-order .button-catalog {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.modal-order .back {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal-order .order {
+  background-color: #f1f1f1;
+}

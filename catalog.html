@@ -3,29 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container top-header">
+  <header class="container">
+    <div class="top-header">
       <a class="logo" href="index.html">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
       <form class="search" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          Поиск:
-          <input type="search" name="search" placeholder="Перфоратор">
-        </label>
+        <label for="search" class="visually-hidden">Поле поиска</label>
+          <input type="search" name="search" placeholder="Перфоратор" id="search">
       </form>
       <a class="tab" href="#">Закладки:0</a>
       <a class="basket" href="#">Корзина:10</a>
       <a class="order" href="#">Оформить заказ</a>
     </div>
     <div class="container middle-header">
-      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="market-name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <p class="contacts">
         <a href="tel:+78125550555">
           +7 (812) 555-05-55
@@ -34,15 +31,15 @@
       </p>
       <ul class="user-navigation">
         <li><a href="#">Равшан Джамшутович</a></li>
-        <li><a href="#"><span class="exit visually-hidden">Выйти</span></a></li>
+        <li><a class="exit" href="#"><span class="visually-hidden">Выйти</span></a></li>
       </ul>
       <ul class="authorization">
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
     </div>
-    <nav class="main-navigation">
-      <ul>
+    <nav>
+      <ul class="main-navigation">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a>Каталог</a></li>
@@ -283,9 +280,9 @@
       </p>
     </section>
   </main>
-  <footer>
+  <footer class="container">
     <div class="footer-top">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
       <p class="footer-contacts">
@@ -294,14 +291,14 @@
           +7 (812) 555-05-55
         </a>
       </p>
-      <ul class="footer main-navigation">
+      <ul class="main-navigation">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <ul class="footer goods-navigation">
+      <ul class="goods-navigation">
         <li><a href="#">Материалы</a></li>
         <li><a href="#">Техника</a></li>
         <li><a href="#">Инструмент</a></li>

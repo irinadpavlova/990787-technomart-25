@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  width: 1200px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
@@ -14,10 +13,20 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .top-header {
   display: flex;
   align-items: center;
-  height: 42px;
 }
 
 .top-header .logo {
@@ -50,17 +59,21 @@ a.logo:active {
 }
 
 .top-header a,
-.top-header label {
+.top-header input {
+  font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
+
+  height: 42px;
 }
 
-.top-header .search {
+.top-header input {
   width: 270px;
-}
 
-.search input {
-  visibility: hidden;
+  color: #ffffff;
+
+  background-color: #293449;
+  border: none;
 }
 
 .top-header .tab,
@@ -68,19 +81,21 @@ a.logo:active {
 .top-header .order {
   width:150px;
 }
+
 header.main {
-  height: 320px;
   margin-bottom: 59px;
 }
 
 .middle-header {
   display: flex;
   justify-content: center;
-  height: 158px;
+
+  color: #32425c;
+
   background-color: #f4f7f9;
 }
 
-.middle-header h1 {
+.market-name {
   width: 196px;
   height: 60px;
   margin-left: 53px;
@@ -101,7 +116,6 @@ header.main {
   padding-left: 74px;
 
   font-size: 21px;
-  font-weight: normal;
   line-height: 1;
   color: #ee3643;
 
@@ -156,17 +170,15 @@ header.main {
 
 .main-navigation {
   justify-content: space-around;
-  height: 60px;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
 }
 
 .main-navigation a {
+  height: 60px;
   color: #ffffff;
 }
 
 .top-header a:hover,
-.top-header label:hover {
+.top-header input:hover {
   background-color: #212a3a;
 }
 
@@ -175,9 +187,11 @@ header.main {
 }
 
 .top-header input:focus {
-  font: inherit;
+  font: 17px;
   line-height: 1.06;
   color: #000000;
+
+  background-color: #ffffff;
 }
 
 a.order {
@@ -207,15 +221,19 @@ a.basket:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header.main-navigation a:hover {
+.main-navigation a:hover {
   background-color: #32425c;
 }
 
 .goods-navigation a:hover,
-.header.main-navigation a:active {
+.main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #1d2739;
+}
+
+.middle-header {
+  width: auto;
 }
 
 main.container {
@@ -309,6 +327,7 @@ background-color: #ffffff;
   font-size: 30px;
   line-height: 1;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .good {
@@ -382,6 +401,7 @@ section.services {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .services h2,
@@ -389,6 +409,7 @@ section.services {
 .contacts h2 {
   font-size: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .services h3 {
@@ -401,6 +422,7 @@ button.service {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.43;
+  text-transform: capitalize;
   box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
   background-color: #32425c;
 }

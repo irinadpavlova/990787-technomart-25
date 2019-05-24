@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,17 +14,15 @@
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">
       </a>
       <form class="search" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          Поиск:
-          <input type="search" name="search" placeholder="Перфоратор">
-        </label>
+        <label for="search" class="visually-hidden">Поле поиска</label>
+          <input type="search" name="search" placeholder="Поиск:" id="search">
       </form>
       <a class="tab" href=#>Закладки:</a>
       <a class="basket" href="#">Корзина:</a>
       <a class="order" href="#">Оформить заказ</a>
     </div>
     <div class="container middle-header">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="market-name">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="contacts">
         <a href="tel:+78125550555">
           +7 (812) 555-05-55
@@ -40,7 +37,7 @@
       </ul>
     </div>
     <nav class="container">
-      <ul class="header main-navigation">
+      <ul class="main-navigation">
         <li><a>Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -258,7 +255,7 @@
       </section>
     </div>
   </main>
-  <footer>
+  <footer class="container">
     <div class="footer-top">
       <a class="logo">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина строительных матералов и инструментов для ремонта &laquo;Техномарт&raquo;">

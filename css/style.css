@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 1280px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -45,7 +46,7 @@ header.main {
   padding-right: 55px;
   padding-bottom: 14px;
   padding-left: 55px;
-  font: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -99,6 +100,8 @@ background-color: #63a63e;
 }
 
 .button.order:active {
+  color: #ffffff;
+
   background-color: #518534;
 }
 
@@ -136,7 +139,6 @@ background-color: #63a63e;
 
 
   background-color: #293449;
-  align-items: stretch;
 
 }
 
@@ -225,7 +227,7 @@ a.logo:active {
   line-height: 1.06;
 }
 
-.top-header .tab {
+.top-header .bookmark {
   padding-top: 14px;
   padding-right: 28px;
   padding-bottom: 13px;
@@ -239,12 +241,24 @@ a.logo:active {
   padding-left: 50px;
 }
 
-.top-header .order {
+.top-header .place-order {
   padding-top: 14px;
   padding-right: 22px;
   padding-bottom: 13px;
   padding-left: 20px;
+
+  background-color: #63a63e;
 }
+
+.top-header .place-order:hover,
+.top-header .place-order:focus {
+  background-color: #5fbb2d;
+}
+
+.top-header .place-order:active {
+  background-color: #518534;
+}
+
 
 .header-wrapper {
   display: flex;
@@ -366,52 +380,19 @@ nav .main-navigation {
 }
 
 .main-navigation li:first-child a {
-  padding-top: 22px;
-  padding-right: 34px;
-  padding-bottom: 26px;
+
   padding-left: 52px;
 }
 
-.main-navigation li:nth-child(2) a {
+.main-navigation a {
   padding-top: 22px;
   padding-right: 31px;
   padding-bottom: 26px;
-  padding-left: 31px;
-}
-
-.main-navigation li:nth-child(3) a {
-  padding-top: 22px;
-  padding-right: 31px;
-  padding-bottom: 26px;
-  padding-left: 29px;
-}
-
-.main-navigation li:nth-child(4) a {
-  padding-top: 22px;
-  padding-right: 30px;
-  padding-bottom: 26px;
-  padding-left: 30px;
-}
-
-.main-navigation li:nth-child(5) a {
-  padding-top: 22px;
-  padding-right: 31px;
-  padding-bottom: 23px;
-  padding-left: 29px;
-}
-
-.main-navigation li:nth-child(6) a {
-  padding-top: 22px;
-  padding-right: 32px;
-  padding-bottom: 23px;
   padding-left: 31px;
 }
 
 .main-navigation li:last-child a {
-  padding-top: 22px;
   padding-right: 55px;
-  padding-bottom: 26px;
-  padding-left: 32px;
 }
 
 a.order {
@@ -443,6 +424,7 @@ a.basket:active {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
+  box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
 }
 
@@ -457,7 +439,7 @@ main.container {
 background-color: #ffffff;
 }
 
-.top {
+.top li {
   margin-bottom: 20px;
 }
 
@@ -522,6 +504,14 @@ background-color: #ffffff;
 
 .discount {
   background-color: #8ed78f;
+  margin-bottom: 20px;
+}
+
+.discount .bushbutton {
+  padding-top: 14px;
+  padding-right: 23px;
+  padding-bottom: 14px;
+  padding-left: 23px;
 }
 
 .bottom .delivery {
@@ -616,6 +606,9 @@ background-color: #ffffff;
   font-weight: bold;
   line-height: 1.06;
   text-align: center;
+}
+
+.good:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -623,14 +616,6 @@ background-color: #ffffff;
 .brand {
     border: solid 1px #eaeaea;
 
-}
-
-.good a {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.29;
-  text-align: center;
 }
 
 .good .tab,
@@ -657,10 +642,6 @@ p.hover-visible {
   border: solid 3px #63a63e;
 }
 
-.good .tab {
-  padding-
-}
-
 .good .tab:hover {
   border: solid 3px #32425c;
 }
@@ -672,7 +653,6 @@ p.hover-visible {
 }
 
 .good h3 {
-  font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
@@ -700,7 +680,8 @@ p.hover-visible {
   margin-bottom: 21px;
   margin-left: 43px;
 
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT-Sans", Arial, sans-serif;
+
   font-size: 17px;
   line-height: 1.06;
   font-weight: bold;

@@ -68,34 +68,40 @@
   <main>
     <div class="container main-slider">
       <ul class="top">
-        <li class="material"><b>Материалы</b><a class="button pushbutton" href="#">На любой вкус</a></li>
-        <li class="tool"><b>Инструмент</b><a class="button pushbutton" href="#">На все случаи</a></li>
-        <li class="equipment"><b>Техника</b><a class="button pushbutton" href="#">Для стройки</a></li>
+        <li class="item-slider material"><div class="flag flag-new">Новинка</div><b>Материалы</b><a class="button pushbutton" href="#">На любой вкус</a></li>
+        <li class="item-slider tool"><b>Инструмент</b><a class="button pushbutton" href="#">На все случаи</a></li>
+        <li class="item-slider equipment"><b>Техника</b><a class="button pushbutton" href="#">Для стройки</a></li>
       </ul>
       <div class="slider-wrapper">
-        <div class="slider">
-          <div class="slide-1">
+        <input class="visually-hidden-input" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden-input" type="radio" id="product-2" name="toggle">
+        <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+        </div>
+        <ul class="slider">
+          <li class="slider-item slide" id="slide-1">
             <b>Дрели</b>
             <p>
               Соседям на радость!
             </p>
             <img src="img/slide-1.jpg" width="620" height="266" alt="Дрели">
             <a class="button" href="catalog.html">Окрыть каталог</a>
-          </div>
-          <div class="slide-2 visually-hidden">
+          </li>
+          <li class="slider-item slide" id="slide-2">
             <b>Перфораторы</b>
             <p>
               Насоящие мужские игрушки
             </p>
             <img src="img/slide-2.jpg" width="620" height="266" alt="Перфораторы">
             <a class="button" href="catalog.html">Окрыть каталог</a>
-          </div>
+          </li>
+        </ul>
           <button class="button-back visually-hidden" type="button">Назад</button>
           <button class="button-next visually-hidden" type="button">Вперед</button>
-        </div>
         <ul class="bottom">
-          <li class="discount"><b>Скидки 50&#37;</b><a class="button pushbutton" href="#">На 350 товаров</a></li>
-          <li class="delivery"><b>Доставка</b><a class="button pushbutton" href="#">Бесплатно</a></li>
+          <li class="item-slider discount"><b>Скидки 50&#37;</b><a class="button pushbutton" href="#">На 350 товаров</a></li>
+          <li class="item-slider delivery"><b>Доставка</b><a class="button pushbutton" href="#">Бесплатно</a></li>
         </ul>
       </div>
     </div>
@@ -202,7 +208,7 @@
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <ul class="services">
+        <ul class="services-list">
           <li><button class="button service delivery" type="button">Доставка</button></li>
           <li><button class="button service guaranty" type="button">Гарантия</button></li>
           <li><button class="button service credit" type="button">Кредит</button></li>

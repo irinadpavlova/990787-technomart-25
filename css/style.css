@@ -19,9 +19,23 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden-input {
   position: absolute;
 
   width: 1px;
@@ -80,6 +94,11 @@ header.main {
 }
 
 .pushbutton {
+  display: block;
+  padding-right: 22px;
+  padding-left: 22px;
+  width: 91px;
+
   opacity: 0.1;
   background-color: #000000;
 }
@@ -617,8 +636,8 @@ background-color: #ffffff;
 .bottom b {
   display: block;
   padding-top: 23px;
-  padding-right: 166px;
-  padding-bottom: 12px;
+  padding-right: 109px;
+  padding-bottom: 11px;
   padding-left: 23px;
   font-family: "Cuprum", Arial, Sans-serif;
   font-size: 24px;
@@ -629,17 +648,11 @@ background-color: #ffffff;
 
 .material {
   margin-right: 20px;
+
   background-color: #ffbf47;
-}
-
-.tool b {
-  padding-right: 162px;
-}
-
-.equipment b {
-  padding-right: 200px;
-  padding-bottom: 15px;
-  padding-left: 22px;
+  background-image: url("../img/icon-material.svg");
+  background-repeat: no-repeat;
+  background-position: 213px 31px;
 }
 
 .top .pushbutton,
@@ -655,26 +668,33 @@ background-color: #ffffff;
 .tool {
   background-color: #3bbce3;
   margin-right: 20px;
+
+  background-image: url("../img/icon-tool.svg");
+  background-repeat: no-repeat;
+  background-position: 197px 33px;
 }
 
 .equipment {
   background-color: #dc91d8;
+  background-image: url("../img/icon-equipment.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 31px;
 }
 
 .discount {
   background-color: #8ed78f;
   margin-bottom: 20px;
-}
 
-.bushbutton {
-  padding-top: 10px;
-  padding-right: 23px;
-  padding-bottom: 10px;
-  padding-left: 23px;
+  background-image: url("../img/icon-discount.svg");
+  background-repeat: no-repeat;
+  background-position: 196px 26px;
 }
 
 .bottom .delivery {
   background-color: #ffc047;
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
 }
 
 .bottom {
@@ -685,11 +705,15 @@ background-color: #ffffff;
 .top li,
 .bottom li {
   width: 300px;
-  min-height: 123px;
+}
+
+.item-slider {
+  position: relative;
 }
 
 .slider-wrapper {
   display: flex;
+  position: relative;
   justify-content: space-between;
 }
 
@@ -698,6 +722,10 @@ background-color: #ffffff;
 }
 
 .slider {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
   position: relative;
   width: 620px;
   height: 266px;
@@ -709,6 +737,8 @@ background-color: #ffffff;
 
 .slider .button {
   position: absolute;
+  top: 206px;
+  left: 25px;
   display: block;
   padding-top: 14px;
   padding-right: 45px;
@@ -733,6 +763,54 @@ background-color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.33;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 220px;
+  left: 295px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slide {
+  display: none;
+}
+
+#product-1:checked ~ .slider-wrapper #slide-1,
+#product-2:checked ~ .slider-wrapper #slide-2 {
+  display: block;
+}
+
+#product-1:checked ~ .slider-wrapper label[for="product-1"],
+#product-2:checked ~ .slider-wrapper label[for="product-2"] {
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+}
+
+#product-1:checked ~ .slider-wrapper {
+  background-color: #849d8f;
+  background-image: url("img/slider-item1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("img/slider-item2.png");
 }
 
 .popular-goods .header,
@@ -882,7 +960,8 @@ p.hover-visible {
   font-size: 16px;
 }
 
-.good .flag {
+.good .flag,
+.item-slider .flag {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -895,7 +974,13 @@ p.hover-visible {
   z-index: 20;
 }
 
-.good .flag-new {
+.item-slider .flag {
+  top: 0;
+  right: 0;
+}
+
+.good .flag-new,
+.item-slider .flag-new {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
@@ -1043,6 +1128,12 @@ section.services {
 section.services .container {
   padding-top: 1px;
   padding-bottom: 1px;
+}
+
+.button.service {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px;
 }
 
 .services-list {

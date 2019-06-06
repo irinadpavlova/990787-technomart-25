@@ -36,22 +36,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*
-.visually-hidden-input {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
 
 .container {
   width: 940px;
@@ -205,17 +189,17 @@ a.logo:focus {
 
 .top-header a {
   color: #ffffff;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 14px;
 }
 
 .top-header input {
   box-sizing: border-box;
   width: 270px;
-  padding-top: 11px;
+  padding-top: 9px;
   padding-right: 20px;
   padding-bottom: 11.5px;
-  padding-left: 49px;
+  padding-left: 47px;
   margin-left: 0;
   margin-right: 0;
 
@@ -267,17 +251,19 @@ a.logo:focus {
   opacity: 0.3;
 }
 
-.search input:hover ~ svg {
+.search input:hover ~ svg,
+.search input:focus ~ svg {
   opacity: 1;
 }
 
 .search input:focus ~ svg path {
   fill: #ee3643;
+  opacity: 1;
 }
 
 .top-header .bookmark {
   position: relative;
-  padding-right: 28px;
+  padding-right: 27px;
   padding-left: 44px;
 }
 
@@ -293,7 +279,7 @@ a.logo:focus {
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 17px;
 
   width: 15px;
@@ -328,7 +314,7 @@ a.logo:focus {
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 17px;
 
   width: 18px;
@@ -382,9 +368,9 @@ a.logo:focus {
   flex-wrap: wrap;
   color: #32425c;
   width: 887px;
-  padding-top: 46px;
-  padding-bottom: 43px;
-  padding-left: 53px;
+  padding-top: 42px;
+  padding-bottom: 41px;
+  padding-left: 50px;
   padding-right: 0;
 
   background-color: #f4f7f9;
@@ -394,7 +380,7 @@ a.logo:focus {
   margin: 0;
   padding: 0;
   margin-right: 71px;
-  margin-top: 8px;
+  margin-top: 5px;
   width: 197px;
   min-height: 60px;
 
@@ -414,11 +400,10 @@ a.logo:focus {
 
 .header-contacts a {
   display: block;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-right: 49px;
   padding-bottom: 9px;
   padding-left: 71px;
-  margin-bottom: 10px;
 
   font-size: 21px;
   line-height: 1;
@@ -431,7 +416,7 @@ a.logo:focus {
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 15px;
   left: 15px;
 
   width: 21px;
@@ -445,7 +430,7 @@ a.logo:focus {
 .header-contacts p {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 4px;
   padding-left: 10px;
 }
 
@@ -472,7 +457,7 @@ a.logo:focus {
  .user-icon a {
   display: block;
   padding-right: 26px;
-  padding-left: 10px;
+  padding-left: 20px;
   margin-right: 10px;
   color: #000000;
 }
@@ -500,7 +485,7 @@ a.logo:focus {
   fill: #32425C;
 }
 
-.user-icon:active path {
+.user-name:active path {
   fill: #c5c5c5;
 }
 
@@ -512,6 +497,10 @@ a.logo:focus {
   fill: #32425C;
 }
 
+.exit:active path {
+  fill: #c5c5c5;
+}
+
 .user a {
   padding-right: 24px;
   padding-left: 24px;
@@ -519,6 +508,13 @@ a.logo:focus {
 
 .authorization a  {
   display: inline-block;
+
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.authorization a:hover {
+  color: #ee3643;
 }
 
 .inner-wrap {
@@ -547,6 +543,24 @@ a.logo:focus {
   visibility: hidden;
 }
 
+.personal-account {
+  position: relative;
+}
+
+.personal-account::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: -20px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #32425c;
+  border-radius: 50%;
+}
+
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -561,9 +575,9 @@ a.logo:focus {
 
 .main-navigation a {
   display: block;
-  padding-top: 21px;
+  padding-top: 19px;
   padding-right: 31px;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
   padding-left: 31px;
 }
 
@@ -737,11 +751,11 @@ background-color: #ffffff;
 }
 
 .slide-1 {
-  display: none;
+  display: block;
 }
 
 .slide-2 {
-  display: block;
+  display: none;
 }
 
 .slider .button {
@@ -973,7 +987,7 @@ p.hover-visible {
 
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 20;
+  z-index: 2;
 }
 
 .item-slider .flag {
@@ -996,7 +1010,7 @@ p.hover-visible {
   padding: 40px 0;
 
   background-color: rgba(255,255,255,0.9);
-  z-index: 10;
+  z-index: 1;
 }
 
 .good .hover-visible .buy,
@@ -1439,6 +1453,14 @@ footer .logo {
 
 footer {
   margin-top: 86px;
+}
+
+.inner-page footer {
+  margin-top: 0;
+}
+
+.inner-page .footer-top {
+  margin-top: 0;
 }
 
 .footer-main-navigation,
@@ -1948,9 +1970,15 @@ input[type="number"] {
   background-color: #f7f3ec;
 }
 
-input[type="checkbox"]:disabled,
-input[type="radio"]:disabled {
-  color: rgba(0, 0, 0, 0.4);
+.filter-input-radio:checked:disabled + label::after,
+.filter-input-radio:checked:disabled:hover + label::after,
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled:hover + label::before,
+.filter-input-checkbox:checked:disabled + label::after,
+.filter-input-checkbox:checked:disabled:hover + label::after,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled:hover + label::before {
+  opacity: 0.3;
 }
 
 .sort {
@@ -1962,7 +1990,8 @@ input[type="radio"]:disabled {
   margin-bottom: 20px;
 }
 
-.sort a {
+.sort-item,
+.sort-item-current {
   display: block;
   margin-right: 65px;
 
@@ -1974,22 +2003,36 @@ input[type="radio"]:disabled {
   border-bottom: 1px dotted #ee3643;
 }
 
-.sort a:first-child {
+.sort-item-current {
   margin-right: 71px;
 }
 
-.sort a:last-child {
-  margin-right: 106px;
+.sort-item-function {
+  margin-right: 105px;
 }
 
-.sort a:hover,
-.sort a:focus {
+.sort-item:hover,
+.sort-item:focus {
   color: #000000;
 
   border-bottom: 1px solid #ee3643;
 }
 
-.sort a:active {
+.sort-item:active {
+  color: #ee3643;
+
+  border: none;
+}
+
+.sort-item-current {
+  color: #ee3643;
+
+  border: none;
+}
+
+.sort-item-current:hover,
+.sort-item-current:focus,
+.sort-item-current:active {
   color: #ee3643;
 
   border: none;
@@ -2047,6 +2090,15 @@ input[type="radio"]:disabled {
 
 .pagination-item-current a {
   color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #ffffff;
+
   background-color: #ee3643;
 }
 
@@ -2082,6 +2134,7 @@ section.perforator p {
 
 .modal {
   position: fixed;
+  z-index: 3;
 
   background-color: #ffffff;
 }
@@ -2265,4 +2318,18 @@ section.perforator p {
   padding-bottom: 37px;
 
   background-color: #f1f1f1;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0 0 0 0.5);
+
 }

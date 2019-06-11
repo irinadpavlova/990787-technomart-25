@@ -43,17 +43,18 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 
-header.main {
+.main-header {
+  margin-bottom: 59px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.06;
   color: #32425c;
 
   background-color: #f4f7f9;
-  margin-bottom: 59px;
 }
 
-.inner-page header.main {
+.inner-page .main-header {
   margin-bottom: 20px;
 }
 
@@ -62,6 +63,7 @@ header.main {
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
@@ -192,9 +194,10 @@ a.logo[href]:active {
 }
 
 .top-header a {
-  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 14px;
+
+  color: #ffffff;
 }
 
 .top-header input {
@@ -270,6 +273,7 @@ a.logo[href]:active {
 
 .top-header .bookmark {
   position: relative;
+
   padding-right: 27px;
   padding-left: 44px;
 }
@@ -319,6 +323,7 @@ a.logo[href]:active {
 
 .top-header .basket {
   position: relative;
+
   padding-right: 31px;
   padding-left: 50px;
 }
@@ -384,12 +389,13 @@ a.logo[href]:active {
 .container.header-content {
   display: flex;
   flex-wrap: wrap;
-  color: #32425c;
   width: 887px;
   padding-top: 42px;
   padding-bottom: 41px;
   padding-left: 50px;
   padding-right: 0;
+
+  color: #32425c;
 
   background-color: #f4f7f9;
 }
@@ -411,6 +417,7 @@ a.logo[href]:active {
 
 .header-contacts {
   position: relative;
+
   font-size: 14px;
   line-height: 1.71;
   color: #32425c;
@@ -463,21 +470,24 @@ a.logo[href]:active {
 
 .user-navigation a {
   display: block;
+  padding-top: 14px;
+  padding-bottom: 11px;
+
   font-size: 21px;
   line-height: 1;
   color: #000000;
-  padding-top: 14px;
-  padding-bottom: 11px;
 
   background-color: #ffffff;
 }
 
  .user-icon a {
   position: relative;
+
   display: block;
   padding-right: 26px;
   padding-left: 43px;
   margin-right: 9px;
+
   color: #000000;
 }
 
@@ -636,7 +646,7 @@ a.basket:active {
 }
 
 main.container {
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .top li {
@@ -659,10 +669,11 @@ background-color: #ffffff;
   padding-right: 109px;
   padding-bottom: 11px;
   padding-left: 23px;
+
   font-family: "Cuprum", Arial, Sans-serif;
   font-size: 24px;
-  font-weight: bold;
   line-height: 1.25;
+  font-weight: bold;
   color: #ffffff;
 }
 
@@ -752,13 +763,13 @@ background-color: #ffffff;
 .slider {
   margin: 0;
   padding: 0;
-
-  list-style: none;
   width: 620px;
   height: 266px;
+
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 
+  list-style: none;
   background-color: #000000;
 }
 
@@ -834,6 +845,7 @@ background-color: #ffffff;
 
   cursor: pointer;
 }
+
 .slide-1 {
   display: block;
 }
@@ -846,6 +858,7 @@ background-color: #ffffff;
   position: absolute;
   top: 206px;
   left: 25px;
+
   display: block;
   padding-right: 46px;
   padding-left: 55px;
@@ -855,6 +868,7 @@ background-color: #ffffff;
   position: absolute;
   top: 23px;
   left: 24px;
+
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
@@ -865,6 +879,7 @@ background-color: #ffffff;
   position: absolute;
   top: 42px;
   left: 25px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.33;
@@ -881,6 +896,7 @@ background-color: #ffffff;
   background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50%;
+
   cursor: pointer;
 }
 
@@ -918,6 +934,7 @@ background-color: #ffffff;
   margin-top: 30px;
   margin-bottom: 29px;
   margin-left: 28px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 1;
@@ -927,16 +944,18 @@ background-color: #ffffff;
 }
 
 .brands {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
-  list-style: none;
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
+
+  list-style: none;
+
 }
 
 .brand {
-    border: solid 1px #eaeaea;
+  border: solid 1px #eaeaea;
 }
 
 .good .tab,
@@ -980,6 +999,7 @@ p.hover-visible {
   padding: 10px 0;
   padding-left: 4px;
   border: 0;
+
   box-shadow: inset 0px -3px 0 0 #367315;
 }
 
@@ -998,9 +1018,10 @@ p.hover-visible {
 }
 
 .hover-visible .tab:active {
-  opacity: 0.3;
   color: #32425c;
+
   border: solid 3px #32425c;
+  opacity: 0.3;
 }
 
 .good h3 {
@@ -1057,6 +1078,7 @@ p.hover-visible {
   line-height: 20px;
   font-weight: bold;
   text-align: center;
+  vertical-align: top;
 
   border: 1px solid #e5e5e5;
 }
@@ -1087,13 +1109,13 @@ p.hover-visible {
   position: absolute;
   top: -1px;
   right: -1px;
+  z-index: 2;
 
   width: 60px;
   height: 60px;
 
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 2;
 }
 
 .item-slider .flag {
@@ -1110,20 +1132,21 @@ p.hover-visible {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 
   width: 218px;
   height: 88px;
   padding: 40px 0;
 
   background-color: rgba(255,255,255,0.9);
-  z-index: 1;
 }
 
 
 
 .hover-visible .tab {
   color: #32425c;
-  background: white;
+
+  background: #ffffff;
 }
 
 .good .hover-visible {
@@ -1132,6 +1155,7 @@ p.hover-visible {
 
 .good:hover .hover-visible {
   display: block;
+
   background-color: #ffffff;
 }
 
@@ -1170,9 +1194,10 @@ p.hover-visible {
 }
 
 .good .price {
+  position: relative;
+
   padding: 0;
   margin: 0;
-  position: relative;
   width: 80px;
   margin: 10px auto;
   margin-bottom: 20px;
@@ -1185,6 +1210,7 @@ p.hover-visible {
   font-weight: bold;
   line-height: 1.06;
   color: #ffffff;
+
   background: #ee3643;
   border-radius: 3px;
 }
@@ -1259,14 +1285,16 @@ section.services .container {
 .services-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .service-slide {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  position: relative;
   min-height: 282px;
 }
 
@@ -1377,6 +1405,7 @@ section.services .container {
   margin: 0;
   padding: 0;
   margin-bottom: 27px;
+
   font-size: 30px;
   line-height: 1;
   font-weight: normal;
@@ -1428,12 +1457,14 @@ section.contacts {
   padding-top: 14px;
   padding-bottom: 17px;
   padding-left: 22px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.43;
   text-align: left;
   text-transform: capitalize;
+
   box-shadow: 0px 1px 0 0 #293449,
               inset 0px 1px 0 0 #405069;
   border-radius: 0px;
@@ -1495,9 +1526,9 @@ section.contacts h2 {
 .transport {
   padding: 0;
   margin: 0;
-
   margin-top: -4px;
   margin-bottom: 46px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.11;
@@ -1544,8 +1575,9 @@ section.contacts img {
 }
 
 .footer-top {
-  background-color: #32425c;
   margin-top: 86px;
+
+  background-color: #32425c;
 }
 
 .footer-bottom {
@@ -1562,6 +1594,8 @@ footer .logo {
   padding-left: 41px;
   margin-right: 20px;
   margin-bottom: 11px;
+
+  vertical-align: center;
 
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
@@ -1785,11 +1819,12 @@ color: #ee3643;
   padding: 0;
   margin: 0;
   margin-bottom: 21px;
-  text-transform: uppercase;
-  list-style: none;
+
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
+  text-transform: uppercase;
+  list-style: none;
 }
 
 .breadcrumbs a {
@@ -1803,6 +1838,7 @@ color: #ee3643;
   padding: 30px;
   padding-left: 28px;
   margin-bottom: 20px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 1;
@@ -1899,6 +1935,7 @@ color: #ee3643;
   margin: 0;
   padding: 0;
   padding-left: 18px;
+
   font-size: 13px;
   line-height: 1.38;
   font-weight: normal;
@@ -2013,6 +2050,7 @@ color: #ee3643;
 
 .filter legend {
   margin-bottom: 14px;
+
   font-size: 17px;
   font-weight: bold;
   line-height: 1.76;
@@ -2020,6 +2058,7 @@ color: #ee3643;
 
 .filter fieldset {
   position: relative;
+
   padding: 0;
   margin: 0;
   margin-bottom: 42px;
@@ -2147,6 +2186,7 @@ color: #ee3643;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
+
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
 }
@@ -2173,8 +2213,10 @@ input[type="number"] {
   align-items: center;
   width: 700px;
   min-height: 38px;
-  background-color: #f7f3ec;
   margin-bottom: 20px;
+
+  background-color: #f7f3ec;
+
 }
 
 .sort-item,
@@ -2263,12 +2305,13 @@ input[type="number"] {
   display: block;
   padding: 9px 14px;
 
-  border: solid 1px #e5e5e5;
-  border-radius: 2px;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
   text-transform: uppercase;
+
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
 }
 
 .pagination-item {
@@ -2326,6 +2369,7 @@ input[type="number"] {
 section.perforator {
   padding-top: 65px;
   padding-bottom: 68px;
+
   background-color: #f4f7f9;
 }
 
@@ -2333,6 +2377,7 @@ section.perforator h2 {
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 1;
@@ -2362,7 +2407,7 @@ section.perforator p {
   display: none;
   bottom: 200px;
   left: 50%;
-  padding-top: 55px;
+  padding-top: 46px;
 
   margin-left: -310px;
 }
@@ -2375,6 +2420,7 @@ section.perforator p {
 
 .modal-close {
   position: absolute;
+  z-index: 5;
 
   top: 9px;
   right: 9px;
@@ -2383,7 +2429,7 @@ section.perforator p {
 
   font-size: 0;
 
-  background-color: #ffffff;
+  background-color: transparent;
   background-image: url("../img/icon-close.svg");
   border: 0;
 
@@ -2392,7 +2438,9 @@ section.perforator p {
 
 .modal-write label {
   display: block;
-  margin-bottom: 13px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -2410,10 +2458,10 @@ section.perforator p {
 .modal-write input,
 .modal-write textarea {
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-right: 16px;
-  padding-bottom: 10px;
-  padding-left: 16px;
+  padding-bottom: 9px;
+  padding-left: 14px;
   width: 220px;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -2427,7 +2475,7 @@ section.perforator p {
 .modal-write textarea {
   width: 100%;
   min-height: 114px;
-  margin-bottom: 37px;
+  margin-bottom: 29px;
 }
 
 .modal-write input:hover,
@@ -2458,10 +2506,10 @@ section.perforator p {
   top: 0;
   left: 0;
   z-index: 3;
+  margin: 0;
 
-   margin: 0;
-   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
-   background-color: #565656;
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+  background-color: #565656;
 }
 
 .modal-map {
@@ -2475,10 +2523,6 @@ section.perforator p {
   margin-left: -470px;
 }
 
-.modal-map .modal-close {
-  background-color: transparent;
-}
-
 .modal-map iframe {
   position: relative;
   z-index: 4;
@@ -2489,8 +2533,8 @@ section.perforator p {
   display: none;
   top: 200px;
   left: 50%;
-  padding-top: 65px;
 
+  padding-top: 65px;
   margin-left: -310px;
 }
 
@@ -2498,8 +2542,9 @@ section.perforator p {
   margin: 0;
   padding: 0;
   padding-right: 20px;
-  margin-bottom: 66px;
+  margin-bottom: 67px;
   padding-left: 99px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 1;
@@ -2510,8 +2555,8 @@ section.perforator p {
   content: "";
 
   position: absolute;
-  top: 55px;
-  left: 81px;
+  top: 49px;
+  left: 80px;
 
   width: 66px;
   height: 66px;
@@ -2524,11 +2569,16 @@ section.perforator p {
 .modal-order .button {
   box-sizing: border-box;
   width: 220px;
+  padding-top: 12px;
+  padding-left: 24px;
 }
 
 .modal-order .back {
   box-sizing: border-box;
   width: 220px;
+
+  padding-top: 12px;
+  padding-left: 24px;
   color: #000000;
 
   background-color: #ffffff;
@@ -2538,16 +2588,15 @@ section.perforator p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   padding-top: 37px;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
 
   background-color: #f1f1f1;
 }
 
 .modal-show {
-display: block;
-animation: bounce 0.2s;
+  display: block;
+  animation: bounce 0.3s;
 }
 
 .modal-error {

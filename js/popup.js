@@ -5,6 +5,7 @@ var form = popup.querySelector("form");
 var yourName = popup.querySelector("[name=name]");
 var yourEmail = popup.querySelector("[name=email]");
 var yourLetter = popup.querySelector("[name=letter]");
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -19,17 +20,17 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
 
   if (storage) {
-   yourName.value = storage;
-   yourEmail.focus();
+    yourName.value = storage;
+    yourEmail.focus();
  } else {
    yourName.focus();
  }
 });
 
 close.addEventListener("click", function (evt) {
- evt.preventDefault();
- popup.classList.remove("modal-show");
- popup.classList.remove("modal-error");
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -56,25 +57,24 @@ window.addEventListener("keydown", function (evt) {
 });
 
 var mapLink = document.querySelector(".contacts-button-map");
-
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 
 mapLink.addEventListener("click", function (evt) {
-evt.preventDefault();
-mapPopup.classList.add("modal-show");
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
 });
 
 mapClose.addEventListener("click", function (evt) {
-evt.preventDefault();
-mapPopup.classList.remove("modal-show");
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
-evt.preventDefault();
-if (evt.keyCode === 27) {
-  if (mapPopup.classList.contains("modal-show")) {
-    mapPopup.classList.remove("modal-show");
+  evt.preventDefault();
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
+    }
   }
-}
 });

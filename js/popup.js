@@ -22,9 +22,9 @@ link.addEventListener("click", function (evt) {
   if (storage) {
     yourName.value = storage;
     yourEmail.focus();
- } else {
-   yourName.focus();
- }
+  } else {
+    yourName.focus();
+  }
 });
 
 close.addEventListener("click", function (evt) {
@@ -40,10 +40,10 @@ form.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
-   if (isStorageSupport) {
-     localStorage.setItem("yourName", yourName.value);
-   }
- }
+    if (isStorageSupport) {
+      localStorage.setItem("yourName", yourName.value);
+    }
+  }
 });
 
 window.addEventListener("keydown", function (evt) {

@@ -178,8 +178,8 @@ input[type="radio"].visually-hidden {
 }
 
 .top-header a {
-  padding-top: 10px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   color: #ffffff;
 }
@@ -187,10 +187,10 @@ input[type="radio"].visually-hidden {
 .header-search {
   box-sizing: border-box;
   width: 270px;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 11.5px;
-  padding-left: 47px;
+  padding-bottom: 10.5px;
+  padding-left: 48px;
   margin-left: 0;
   margin-right: 0;
 
@@ -270,7 +270,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .bookmark {
-  padding-left: 47px;
+  padding-left: 44px;
   padding-right: 10px;
 }
 
@@ -366,8 +366,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: flex-start;
   width: 887px;
-  padding-top: 42px;
-  padding-bottom: 41px;
+  padding-top: 44px;
+  padding-bottom: 39px;
   padding-left: 50px;
   padding-right: 0;
 
@@ -502,6 +502,7 @@ input[type="radio"].visually-hidden {
 .inner-page .user-name {
   padding-right: 37px;
   margin-right: 0;
+  word-break: break-word;
 }
 
 .inner-page .user-name:hover,
@@ -659,7 +660,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding-top: 21px;
   padding-right: 109px;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
   padding-left: 23px;
 
   font-family: "Cuprum", Arial, Sans-serif;
@@ -680,7 +681,7 @@ input[type="radio"].visually-hidden {
 
 .top .pushbutton,
 .bottom .pushbutton {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   margin-left: 25px;
 }
 
@@ -804,7 +805,7 @@ input[type="radio"].visually-hidden {
 .button-indicator-2 {
   position: absolute;
   padding: 0;
-  bottom: 44px;
+  bottom: 36px;
   left: 295px;
 
   width: 10px;
@@ -854,8 +855,8 @@ input[type="radio"].visually-hidden {
   left: 25px;
 
   display: block;
-  padding-right: 46px;
-  padding-left: 55px;
+  padding-right: 45px;
+  padding-left: 49px;
 }
 
 .slider b {
@@ -886,7 +887,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-goods .header {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 }
 
 .popular-goods .button,
@@ -1006,7 +1007,7 @@ input[type="radio"].visually-hidden {
 .good h3 {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-bottom: 11px;
 
   font-size: 18px;
@@ -1025,7 +1026,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-goods {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .good .deleted-price {
@@ -1073,7 +1074,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page .good {
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .inner-page .good:nth-child(3n) {
@@ -1173,11 +1174,11 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 80px;
   margin: 10px auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
-  padding-left: 27px;
+  padding-left: 26px;
 
   font-size: 17px;
   font-weight: bold;
@@ -1277,7 +1278,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-brands {
-  margin-bottom: 67px;
+  margin-bottom: 64px;
 }
 
 .services p,
@@ -1292,8 +1293,8 @@ input[type="radio"].visually-hidden {
 }
 
 .services-container {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 67px;
+  padding-bottom: 101px;
 }
 
 .services-list {
@@ -1311,13 +1312,11 @@ input[type="radio"].visually-hidden {
 
 .service-slide {
   position: relative;
-
-  min-height: 219px;
 }
 
 .services h3 {
-  margin-top: -3px;
-  margin-bottom: 23px;
+  margin-top: -2px;
+  margin-bottom: 25px;
 }
 
 .delivery::before {
@@ -1368,6 +1367,9 @@ input[type="radio"].visually-hidden {
 }
 
 .guaranty p {
+  position: relative;
+  z-index: 2;
+
   width: 379px;
 }
 
@@ -1385,6 +1387,9 @@ input[type="radio"].visually-hidden {
 }
 
 .credit p {
+  position: relative;
+  z-index: 2;
+
   width: 279px;
 }
 
@@ -1399,7 +1404,7 @@ input[type="radio"].visually-hidden {
 
 .services .services-excellence {
   width: 398px;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .services-slider {
@@ -1424,7 +1429,7 @@ input[type="radio"].visually-hidden {
 .map-contacts h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   font-size: 30px;
   line-height: 1;
@@ -1442,7 +1447,7 @@ input[type="radio"].visually-hidden {
 .bottom-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 77px;
+  padding-top: 79px;
   padding-bottom: 86px;
 }
 
@@ -1526,10 +1531,10 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: -46px;
+  bottom: -46px;
   left: 230px;
 
   width: 10px;
-  height: 279px;
 
   background-image: url("../img/divider.png");
 }
@@ -1591,13 +1596,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 33px;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
+.page-footer {
+  background-color: #32425c;
 }
 
 .footer-top {
-  background-color: #32425c;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-bottom {
@@ -1662,14 +1667,14 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 19px;
+  padding-top: 17px;
   margin-left: auto;
 
   list-style: none;
 }
 
 .footer-main-navigation {
-  padding-top: 39px;
+  padding-top: 37px;
   margin-bottom: 18px;
   width: 553px;
 }
@@ -1968,7 +1973,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort h2 {
-  padding-right: 140px;
+  padding-right: 138px;
 }
 
 .filter ul {
@@ -2081,7 +2086,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 42px;
 }
 
-
 .filter fieldset:first-child::after,
 .filter fieldset:nth-child(2)::after {
   content: "";
@@ -2182,7 +2186,8 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.filter-input-radio:enabled:focus + label::before {
+.filter-input-radio:enabled:focus + label::before,
+.filter-input-radio:enabled:hover + label::before {
   content: "";
 
   position: absolute;
@@ -2194,10 +2199,6 @@ input[type="radio"].visually-hidden {
 
   border: 4px solid #b5b5b5;
   border-radius: 50%;
-}
-
-.filter-input-radio:enabled:hover + label::before {
-  border: 4px solid #b5b5b5;
 }
 
 .filter-input-radio:enabled:checked + label::after {
@@ -2215,10 +2216,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-radio:enabled:checked:hover + label::after,
-.filter-input-radio:enabled:checked:focus + label::after {
-  background-color: #b5b5b5;
-}
-
 .filter-input-radio:enabled:checked:focus + label::after {
   content: "";
 
@@ -2247,16 +2244,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-input[type="number"] {
-  font-family: inherit;
-  font-size: 17px;
-  line-height: 1.06;
-  text-align: center;
-  color: #000000;
-
-  background-color: #f7f3ec;
-}
-
 .filter-input-radio:checked:disabled + label::after {
   content: "";
 
@@ -2270,20 +2257,6 @@ input[type="number"] {
   background-color: #b5b5b5;
   border-radius: 50%;
   opacity: 0.3;
-}
-
-.filter-input-radio:checked:focus + label::after {
-  content: "";
-
-  position: absolute;
-  left: -27px;
-  top: 5px;
-
-  width: 9px;
-  height: 9px;
-
-  background-color: #b5b5b5;
-  border-radius: 50%;
 }
 
 .filter-input-radio:disabled + label::before {
@@ -2305,10 +2278,11 @@ input[type="number"] {
 
 .sort {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 700px;
-  min-height: 38px;
   height: 30px;
+  min-height: 38px;
   margin-bottom: 20px;
 
   background-color: #f7f3ec;
@@ -2316,9 +2290,12 @@ input[type="number"] {
 
 .sort-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 354px;
-  margin-right: 46px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 361px;
+  height: 100%;
+  margin-right: 42px;
 }
 
 .sort-item,
@@ -2374,13 +2351,6 @@ input[type="number"] {
   fill: #c5c5c5;
 }
 
-.sort-indicator-down {
-  margin-top: -5px;
-  margin-right: 16px;
-
-  transform: rotate(180deg);
-}
-
 .sort-indicator-up:hover path,
 .sort-indicator-down:hover path {
   fill: #231F20;
@@ -2425,8 +2395,8 @@ input[type="number"] {
 }
 
 .pagination-item:last-child a {
-  padding-left: 29px;
-  padding-right: 31px;
+  padding-left: 30px;
+  padding-right: 32px;
 }
 
 .pagination-item a:hover,
@@ -2461,7 +2431,7 @@ input[type="number"] {
 }
 
 .inner-page .goods {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .catalog-columns {
@@ -2791,18 +2761,4 @@ input[type="number"] {
   80% {
     transform: translateX(10px);
   }
-}
-
-.overlay {
-  position: absolute;
-
-  /* display: block;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0 0 0 0.3); */
 }

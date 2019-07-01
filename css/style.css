@@ -883,6 +883,11 @@ input[type="radio"].visually-hidden {
 .popular-goods .header,
 .popular-brands .header {
   display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  padding-left: 27px;
   background-color: #f9f5f0;
 }
 
@@ -894,17 +899,14 @@ input[type="radio"].visually-hidden {
 .popular-brands .button {
   box-sizing: border-box;
   min-width: 253px;
-  margin-top: 25px;
-  margin-right: 24px;
-  margin-bottom: 26px;
   margin-left: auto;
 }
 
 .popular-goods h2,
 .popular-brands h2 {
-  margin-top: 30px;
-  margin-bottom: 29px;
-  margin-left: 28px;
+  padding: 0;
+  margin: 0;
+  padding-right: 200px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -1956,7 +1958,7 @@ input[type="radio"].visually-hidden {
 .sort h2 {
   margin: 0;
   padding: 0;
-  padding-left: 18px;
+  padding-left: 12px;
 
   font-size: 13px;
   line-height: 1.38;
@@ -1969,11 +1971,12 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
+  padding-left: 19px;
   margin-bottom: 12px;
 }
 
 .sort h2 {
-  padding-right: 138px;
+  padding-right: 136px;
 }
 
 .filter ul {
@@ -2279,10 +2282,11 @@ input[type="radio"].visually-hidden {
 .sort {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   align-items: center;
   width: 700px;
-  height: 30px;
   min-height: 38px;
+  padding: 7px;
   margin-bottom: 20px;
 
   background-color: #f7f3ec;
@@ -2294,8 +2298,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: space-around;
   width: 361px;
-  height: 100%;
-  margin-right: 42px;
+  margin-right: 43px;
 }
 
 .sort-item,
